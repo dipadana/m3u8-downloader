@@ -7,14 +7,10 @@
 
 <script lang="ts">
 import { defineComponent, ref } from 'vue';
-import { useRoute, useRouter } from 'vue-router';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import { useRoute, useRouter } from 'vue-router'; // @ is an alias to /src
 
 export default defineComponent({
   name: 'Home',
-  components: {
-    HelloWorld,
-  },
   setup (props, ctx) {
     const route = useRoute()
     const router = useRouter()
